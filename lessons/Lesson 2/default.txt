@@ -1,0 +1,25 @@
+﻿Lesson 2: Build a Poll
+
+1 Make a poll of your own! The goal is to build a poll that is interesting to you, and learn to collect votes from people and reach conclusions or make decisions based on your poll. 
+
+Example poll idea:  “What is your favorite activity on the XO?”  
+You can use this poll in your classroom or your family, to find out what activity is the most favorite or popular.   
+
+2 Open the Poll Builder activity and click on the “Build a Poll” button at the bottom of the screen.
+
+3 Fill in your poll details on the blank form that appears. Type in your poll title, question and answers, and the number of votes you want to collect.
+
+4 Think about your “Poll Title” and “Question.” The title is the name of your poll, and the question is what you want to know.    In our example poll, the title is “Favorite Food” and the question is “What is your favorite food?”
+
+5 Next type in the number of votes you want to collect in your poll. This number is called a “sample size” by researchers.  To do this correctly, think about how many people you want to poll. Is it all of the students in your class? Just the 12-year-olds? All of the people in your family? All of the women in your town? 
+
+6 Now type in the “Answer choices,” you want people to choose from. You can offer 2, 3, 4 or 5 answer choices in this poll.  In our Favorite Food example, the answer choices could be: 1. Bread, 2. Rice, 3. Beans, 4. Candy, 5. Bananas.
+
+7 Once you have filled in all of the “Build a Poll” fields, click “Step 1:Preview” to see how your poll will look. 
+
+8 If you like how it looks, click “Save Poll.”
+
+9 If you want to change something, click “Edit Poll.” You can change the information in any field. 
+
+10 When you are happy, click “Step 2: Save Poll” -- your poll will be built.
+

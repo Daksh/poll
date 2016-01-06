@@ -27,7 +27,6 @@ from gettext import gettext as _
 from gi.repository import Gtk
 from gi.repository import Gdk
 from gi.repository import GdkPixbuf
-from gi.repository import Abi
 
 from sugar3 import mime
 from sugar3 import profile
@@ -601,26 +600,27 @@ class LessonPlanWidget(Gtk.Notebook):
 
     def __load_lesson(self, path, name):
         """
-        Load the lesson content from a .abw, taking l10n into account.
+        Load the lesson content from a .txt, taking l10n into account.
 
         path -- string, path of lesson plan file, e.g. lessons/Introduction
         lesson -- string, name of lesson
         """
-
         code, encoding = locale.getdefaultlocale()
-        canvas = Abi.Widget()
-        canvas.show()
-
+        if code is None:
+            code = 'en'
         files = map(
-            lambda x: os.path.join(path, '%s.abw' % x),
+            lambda x: os.path.join(path, '%s.txt' % x),
             ('_' + code.lower(), '_' + code.split('_')[0].lower(),
              'default'))
 
         files = filter(lambda x: os.path.exists(x), files)
-        canvas.load_file('file://%s' % files[0], '')
-        canvas.view_online_layout()
-        canvas.zoom_width()
-        canvas.set_show_margin(False)
+
+        canvas = Gtk.TextView();
+        canvas.set_wrap_mode(Gtk.WrapMode.WORD)
+        with open(files[0],'r') as f:
+            text = f.read()
+            canvas.get_buffer().set_text(text)
+        
         self.append_page(canvas, Gtk.Label(label=name))
 
 
